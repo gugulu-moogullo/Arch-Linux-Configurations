@@ -1,0 +1,13 @@
+# We're not using the 'JetBrainsMono Nerd Font', but instead, we're using 'Ubuntu Mono'.
+[window]
+decorations="none"
+
+[colors.primary]
+background="#000000"
+
+[font]
+normal={family="Ubuntu Mono",style="Regular"}
+bold={family="Ubuntu Mono",style="Bold"}
+italic={family="Ubuntu Mono",style="Italic"}
+bold_italic={family="Ubuntu Mono",style="Bold Italic"}
+size=13.00
