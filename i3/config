@@ -54,6 +54,16 @@ bindsym $mod+shift+s exec --no-startup-id pactl set-default-sink alsa_output.pci
 exec_always feh --bg-scale /home/theprimeagen/Wallpapers/Wallpaper-One.png
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
+# Display-Management (Second-Screen) Custom-Keybindings
+# For-extending-the-display
+bindsym $mod+Ctrl+Shift+e exec --no-startup-id xrandr --output eDP1 --auto --output DP1 --auto --right-of eDP1
+# For-mirroring-the-display
+bindsym $mod+Ctrl+Shift+m exec --no-startup-id xrandr --output eDP1 --auto --output DP1 --auto --same-as eDP1
+# For-laptop-screen-only
+bindsym $mod+Ctrl+Shift+l exec --no-startup-id xrandr --output DP1 --off --output eDP1 --auto
+# For-second-screen-only
+bindsym $mod+Ctrl+Shift+s exec --no-startup-id xrandr --output eDP1 --off --output DP1 --auto
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
