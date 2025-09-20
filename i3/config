@@ -54,7 +54,7 @@ bindsym $mod+shift+s exec --no-startup-id pactl set-default-sink alsa_output.pci
 exec_always feh --bg-scale /home/theprimeagen/Wallpapers/Wallpaper-One.png
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
-# Display-Management (Second-Screen) Custom-Keybindings
+# Display-Management (Second-Screen/HDMI) Custom-Keybindings
 # For-extending-the-display
 bindsym $mod+Ctrl+Shift+e exec --no-startup-id xrandr --output eDP1 --auto --output DP1 --auto --right-of eDP1
 # For-mirroring-the-display
